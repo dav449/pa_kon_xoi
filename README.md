@@ -3,9 +3,9 @@
 Dự án Java OOP với tích hợp MySQL Dự án này là một ứng dụng dựa trên ngôn ngữ lập trình Java, được phát triển theo các nguyên lý của lập trình hướng đối tượng (OOP). Ứng dụng kết nối với cơ sở dữ liệu MySQL để lưu trữ và truy xuất dữ liệu. Dự án mô phỏng một hệ thống quản lý thư viện đơn giản, cho phép thủ thư và người đọc quản lý và truy cập dữ liệu sách cũng như các giao dịch mượn/trả sách
 
 # 👥 Thành viên
-  Ta Cong Chien  23010209
-  Nguyen Van Tu  23010109 
-  Nguyen Le Duc Anh 23010246
+  - Ta Cong Chien  23010209
+  - Nguyen Van Tu  23010109
+  - Nguyen Le Duc Anh 23010246
 # 🧰 Công nghệ sử dụng
 Java: Ngôn ngữ lập trình chính.
 
