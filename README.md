@@ -1,16 +1,29 @@
-# 📚 Quản Lý Thư Viện 
+# 📚 Phần mềm Quản lý Hàng hóa bằng Quét Mã Vạch
 # 📌 Giới thiệu:
-Dự án Java OOP với tích hợp MySQL Dự án này là một ứng dụng dựa trên ngôn ngữ lập trình Java, được phát triển theo các nguyên lý của lập trình hướng đối tượng (OOP). Ứng dụng kết nối với cơ sở dữ liệu MySQL để lưu trữ và truy xuất dữ liệu. Dự án mô phỏng một hệ thống quản lý thư viện đơn giản, cho phép thủ thư và người đọc quản lý và truy cập dữ liệu sách cũng như các giao dịch mượn/trả sách
-
+Xây dựng một phần mềm đơn giản giúp quản lý hàng hóa trong kho thông qua việc quét mã vạch, nhằm hỗ trợ kiểm kê, kiểm soát số lượng, hạn sử dụng và cập nhật thông tin sản phẩm nhanh chóng, chính xác.
 # 👥 Thành viên
   - Ta Cong Chien  23010209
   - Nguyen Van Tu  23010109
   - Nguyen Le Duc Anh 23010246
 # 🧰 Công nghệ sử dụng
-Java: Ngôn ngữ lập trình chính.
-
-MySQL: Hệ quản trị cơ sở dữ liệu quan hệ để lưu trữ và quản lý dữ liệu.
-
-JDBC (Java Database Connectivity): Được sử dụng để kết nối và tương tác với MySQL.
-
-Eclipse/IntelliJ IDEA: Môi trường phát triển tích hợp (IDE) để xây dựng và chạy ứng dụng.
+ • Ngôn ngữ lập trình: Python
+ • Thư viện chính:
+ • Tkinter: Tạo giao diện người dùng
+ • SQLite3: Lưu trữ và truy vấn dữ liệu
+ • OpenCV & pyzbar: Xử lý ảnh và quét mã vạch
+ • IDE sử dụng: Visual Studio Code
+ • Cơ sở dữ liệu: products.db
+ # 🪛 CẤU TRÚC CHƯƠNG TRÌNH
+ # Chương trình được chia thành các mô-đun:
+ 1. init_db.py
+ • Khởi tạo cơ sở dữ liệu SQLite
+ • Tạo bảng products và thêm dữ liệu mẫu
+ • Các hàm xử lý dữ liệu như check_product, update_quantity, upsert_product
+ 2. scanner.py
+ • Quét mã vạch từ ảnh hoặc webcam
+ • Kiểm tra và cập nhật số lượng sản phẩm sau khi quét
+ 3. update_gui.py
+ • Giao diện thêm/cập nhật sản phẩm với các trường: mã vạch, tên, số lượng, giá, hạn sử dụng
+ • Thiết kế hiện đại, dễ sử dụng, có xác thực đầu vào và phản hồi người dùng
+ 4. main.py
+ • Cho phép người dùng chọn chế độ hoạt động: quét từ webcam, quét từ ảnh, hay cập nhật dữ liệu
